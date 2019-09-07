@@ -1,7 +1,7 @@
 # ring_container_cpp
-# ring container C++
+ring container C++
 
-# created by Ilya Shishkin
-# cortl@yandex.ru
+created by Ilya Shishkin
+cortl@yandex.ru
 
-# The project is under development
+The project is under development
