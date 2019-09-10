@@ -8,16 +8,17 @@
 //                                                //
 //************************************************//
 
-#include"ring.h"
-
 #include <iostream>
+#include <stdexcept>
+
+#include "ring.h"
 
 using namespace std;
 
 struct A
 {
-    unsigned long long x;
-    A(unsigned long long x) : x(x) {}
+    int x;
+    A(int x) : x(x) {}
 };
 
 int main()
@@ -25,7 +26,13 @@ int main()
     ring<A> r;
     ring<A>::iterator it;
 
-    unsigned long long count = 0;
+    try { r.move(); }
+    catch (exception& e) { cout << e.what() << endl; }
+
+    try { r.insert(nullptr); }
+    catch (exception& e) { cout << e.what() << endl; }
+
+    int count = 0;
     while (count < 5)
         r.insert_next(new A(count++));
 

@@ -11,6 +11,8 @@
 #ifndef RING_H
 #define RING_H
 
+#include <stdexcept>
+
 template<class T>
 class ring
 {
@@ -73,7 +75,7 @@ public:
     iterator insert(T *source)
     {
         if (source == nullptr)
-            throw ("invalid source");
+            throw std::runtime_error("ring.h: invalid source");
         item *temp = new item(source);
         if (size > 0)
         {
@@ -118,7 +120,7 @@ public:
             size--;
         }
         else
-            throw ("moving from an empty container");
+            throw std::runtime_error("ring.h: moving from an empty container");
         return item_temp;
     }
 };
