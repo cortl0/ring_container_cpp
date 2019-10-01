@@ -1,8 +1,9 @@
 //************************************************//
 //                                                //
-//  ring container C++ v0.1                       //
+//  ring container C++                            //
 //  created by Ilya Shishkin                      //
-//  cortl@yandex.ru                               //
+//  cortl@8iter.ru                                //
+//  http://8iter.ru                               //
 //  https://github.com/cortl0/ring_container_cpp  //
 //  licensed by GPL v3.0                          //
 //                                                //
